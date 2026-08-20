@@ -270,7 +270,7 @@
       <h1>Contact</h1>
     </header>
 
-    <p class="intro">I&rsquo;d love to hear from you. Send me a note and I&rsquo;ll get back to you.</p>
+    <p class="intro">Send me a note. I read what comes in.</p>
 
     <form id="contact-form" action="https://formspree.io/f/mwleawnl" method="POST" novalidate>
       <label>
@@ -323,7 +323,7 @@
           .then(function (response) {
             if (response.ok) {
               form.reset();
-              status.textContent = 'Thanks. Your message is on its way. I’ll get back to you.';
+              status.textContent = 'Message received. Thanks for writing.';
               status.dataset.state = 'success';
               status.hidden = false;
               btn.textContent = 'Send another';
