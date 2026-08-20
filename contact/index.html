@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" style="--maxContentWidth: 760px;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <meta name="description" content="Get in touch with Behnaz Nojavanasghari." />
+  <link rel="canonical" href="https://bnojavan.github.io/contact/" />
+  <meta property="og:title" content="Contact — Behnaz Nojavanasghari" />
+  <meta property="og:description" content="Get in touch with Behnaz Nojavanasghari." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bnojavan.github.io/contact/" />
+  <meta property="og:image" content="https://bnojavan.github.io/profile.jpg" />
+  <style>
+    @font-face {
+      font-family: "Petrona Variable";
+      font-style: normal;
+      font-display: swap;
+      font-weight: 100 900;
+      src: url(https://pscanf.com/_astro/petrona-latin-ext-wght-normal.DffTHwTe.woff2) format("woff2-variations");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: "Petrona Variable";
+      font-style: normal;
+      font-display: swap;
+      font-weight: 100 900;
+      src: url(https://pscanf.com/_astro/petrona-latin-wght-normal.CvMo8Nw_.woff2) format("woff2-variations");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "Petrona Variable";
+      font-style: italic;
+      font-display: swap;
+      font-weight: 100 900;
+      src: url(https://pscanf.com/_astro/petrona-latin-ext-wght-italic.DPWrcJIc.woff2) format("woff2-variations");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: "Petrona Variable";
+      font-style: italic;
+      font-display: swap;
+      font-weight: 100 900;
+      src: url(https://pscanf.com/_astro/petrona-latin-wght-italic.Cxq2NBhc.woff2) format("woff2-variations");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "Petrona Fallback";
+      font-style: normal;
+      font-weight: 100 900;
+      src: local("Georgia"), local("Times New Roman"), local("Liberation Serif");
+      size-adjust: 96%;
+      ascent-override: 88.62%;
+      descent-override: 27.89%;
+      line-gap-override: 0%;
+    }
+
+    @font-face {
+      font-family: "Petrona Fallback";
+      font-style: italic;
+      font-weight: 100 900;
+      src: local("Georgia Italic"), local("Times New Roman Italic"), local("Liberation Serif Italic");
+      size-adjust: 87.74%;
+      ascent-override: 97.79%;
+      descent-override: 30.77%;
+      line-gap-override: 0%;
+    }
+
+    :root {
+      --greys-0: #ffffff;
+      --greys-2: #f5f5f5;
+      --greys-3: #f0f0f0;
+      --greys-4: #d9d9d9;
+      --greys-7: #595959;
+      --greys-8-5: #343434;
+      --greys-10: #1f1f1f;
+      --greys-12: #000000;
+      --violets-3: #9775fa;
+      --violets-5: #6741d9;
+
+      --page-background: var(--greys-0);
+      --primary-text-color: var(--greys-12);
+      --secondary-text-color: var(--greys-7);
+      --accent-color: var(--violets-5);
+      --border-color: var(--greys-3);
+      --field-background: var(--greys-0);
+      --field-border: var(--greys-4);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page-background: var(--greys-10);
+        --primary-text-color: var(--greys-2);
+        --secondary-text-color: var(--greys-4);
+        --accent-color: var(--violets-3);
+        --border-color: var(--greys-8-5);
+        --field-background: #2a2320;
+        --field-border: #4d3b2f;
+      }
+    }
+
+    html,
+    body {
+      font-family: "Petrona Variable", "Petrona Fallback", serif;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: var(--page-background);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      color: var(--primary-text-color);
+    }
+
+    main {
+      max-width: var(--maxContentWidth);
+      width: calc(100vw - 4em);
+      margin-left: 2em;
+      margin-right: 2em;
+      padding-top: 1em;
+      padding-bottom: 6em;
+    }
+
+    header {
+      margin-bottom: 2em;
+    }
+
+    header h1 {
+      width: fit-content;
+      margin-bottom: 0.5em;
+      color: var(--accent-color);
+      font-size: 1.5em;
+      font-weight: 700;
+      font-variant: small-caps;
+      font-style: oblique;
+      text-decoration: none;
+      border-bottom: 4px solid var(--accent-color);
+    }
+
+    .intro {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-bottom: 2em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25em;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35em;
+      font-size: 0.95em;
+      color: var(--secondary-text-color);
+    }
+
+    input,
+    textarea {
+      font-family: inherit;
+      font-size: 1em;
+      color: var(--primary-text-color);
+      background-color: var(--field-background);
+      border: 1px solid var(--field-border);
+      border-radius: 4px;
+      padding: 0.65em 0.75em;
+      width: 100%;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 1px;
+      border-color: var(--accent-color);
+    }
+
+    textarea {
+      min-height: 8em;
+      resize: vertical;
+    }
+
+    button {
+      align-self: flex-start;
+      font-family: inherit;
+      font-size: 1em;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: var(--accent-color);
+      border: none;
+      border-radius: 4px;
+      padding: 0.65em 1.5em;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .form-status {
+      font-size: 1em;
+      line-height: 1.5em;
+      padding: 0.75em 1em;
+      border-radius: 4px;
+      margin-top: 0.5em;
+    }
+
+    .form-status[data-state="success"] {
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
+
+    .form-status[data-state="error"] {
+      color: #c92a2a;
+      border: 1px solid #c92a2a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .form-status[data-state="error"] {
+        color: #ff8787;
+        border-color: #ff8787;
+      }
+    }
+
+    .footer-nav {
+      margin-top: 3em;
+    }
+
+    .footer-nav a {
+      color: var(--accent-color);
+      font-size: 1.275em;
+      text-decoration: underline;
+      padding-bottom: 2rem;
+    }
+
+    .footer-nav .separator {
+      color: var(--secondary-text-color);
+      font-size: 1.275em;
+      margin-inline: 0.7em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Contact</h1>
+    </header>
+
+    <p class="intro">I&rsquo;d love to hear from you. Send me a note and I&rsquo;ll get back to you.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/mwleawnl" method="POST" novalidate>
+      <label>
+        Your name
+        <input type="text" name="name" required autocomplete="name" />
+      </label>
+
+      <label>
+        Your email
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" required></textarea>
+      </label>
+
+      <button type="submit" id="submit-btn">Send message</button>
+
+      <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+    </form>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="../index.html">Back home</a>
+      <span class="separator" aria-hidden="true">&middot;</span>
+      <a href="../posts/">Read posts</a>
+    </nav>
+  </main>
+
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('form-status');
+      var btn = document.getElementById('submit-btn');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        status.hidden = true;
+        status.removeAttribute('data-state');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        var data = new FormData(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' }
+        })
+          .then(function (response) {
+            if (response.ok) {
+              form.reset();
+              status.textContent = 'Thanks. Your message is on its way. I’ll get back to you.';
+              status.dataset.state = 'success';
+              status.hidden = false;
+              btn.textContent = 'Send another';
+              btn.disabled = false;
+            } else {
+              response.json().then(function (data) {
+                var msg = (data && data.errors && data.errors[0] && data.errors[0].message)
+                  ? data.errors[0].message
+                  : 'Something went wrong. Please try again in a moment.';
+                status.textContent = msg;
+                status.dataset.state = 'error';
+                status.hidden = false;
+                btn.textContent = 'Send message';
+                btn.disabled = false;
+              }).catch(function () {
+                status.textContent = 'Something went wrong. Please try again in a moment.';
+                status.dataset.state = 'error';
+                status.hidden = false;
+                btn.textContent = 'Send message';
+                btn.disabled = false;
+              });
+            }
+          })
+          .catch(function () {
+            status.textContent = 'Network error. Please check your connection and try again.';
+            status.dataset.state = 'error';
+            status.hidden = false;
+            btn.textContent = 'Send message';
+            btn.disabled = false;
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
